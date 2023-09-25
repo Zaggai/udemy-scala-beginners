@@ -6,6 +6,7 @@ object ValuesVariablesTypes extends App {
   println(x)
 
   // VALS ARE IMMUTABLE
+  // the INT after x: is the type of the value
 
   // COMPILER can infer types
 
@@ -22,6 +23,9 @@ object ValuesVariablesTypes extends App {
 
   // variables
   var aVariable: Int = 4
+
+  //difference between values and varibles is that varibles are mutable (they can be modyfied) 
+  // varibles are used for side effects (changing a variable is called a side effect)
 
   aVariable = 5 // side effects
 }

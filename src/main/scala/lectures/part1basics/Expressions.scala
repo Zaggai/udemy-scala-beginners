@@ -5,10 +5,10 @@ object Expressions extends App {
   val x = 1 + 2 // EXPRESSION
   println(x)
 
-  println(2 + 3 * 4)
+  println(2 + 3 * 4) //mathematical expression
   // + - * / & | ^ << >> >>> (right shift with zero extension)
 
-  println(1 == x)
+  println(1 == x) //expression evaluates to a boolean
   // == != > >= < <=
 
   println(!(1 == x))
@@ -51,18 +51,25 @@ object Expressions extends App {
     if (z > 2) "hello" else "goodbye"
   }
 
-  // 1. difference between "hello world" vs println("hello world")?
-  // 2.
+  //Exercises: 
+  // 1. difference between string "hello world" vs println("hello world")?
+  // the first is an value of the type String the second is an expression which is a side effect and the type is therefore Unit. 
 
+  // 2.
+  //what is the value of this?
   val someValue = {
     2 < 3
   }
   println(someValue)
+  //the type is a boolean with the value true
 
+  //what is the value of this?
   val someOtherValue = {
     if(someValue) 239 else 986
     42
   }
   println(someOtherValue)
+  //the value is 42 with the type Int as that is the last expression in the code block
+  //the if line is irrelevant. 
 
 }
